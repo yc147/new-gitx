@@ -1,0 +1,17 @@
+template:
+  name: Step Template
+  identifier: step_template
+  versionLabel: v1
+  type: Step
+  projectIdentifier: Yogesh_Without_GitSync
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Http
+    timeout: 10s
+    spec:
+      url: <+input>
+      method: GET
+      headers: []
+      outputVariables: []
+      requestBody: <+input>
