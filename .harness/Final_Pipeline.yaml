@@ -22,7 +22,6 @@ pipeline:
                               spec:
                                 url: <+input>
                                 requestBody: <+input>
-                              timeout: <+input>
   tags: {}
   projectIdentifier: Yogesh_Chaudhary_Test
   orgIdentifier: default
