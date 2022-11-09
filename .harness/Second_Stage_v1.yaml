@@ -15,11 +15,10 @@ template:
               name: Step 1
               identifier: Step_1
               template:
-                templateRef: Http_Test
+                templateRef: Second_Step
                 versionLabel: v1
                 templateInputs:
                   type: Http
                   spec:
                     url: <+input>
                     requestBody: <+input>
-                  timeout: <+input>
