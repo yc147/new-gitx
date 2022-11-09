@@ -1,0 +1,17 @@
+template:
+  name: Second Step
+  identifier: Second_Step
+  versionLabel: v1
+  type: Step
+  projectIdentifier: Yogesh_Chaudhary_Test
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Http
+    timeout: 10s
+    spec:
+      url: <+input>
+      headers: []
+      outputVariables: []
+      method: GET
+      requestBody: <+input>
