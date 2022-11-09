@@ -1,0 +1,27 @@
+pipeline:
+  name: P1
+  identifier: P1
+  template:
+    templateRef: Pipeline_Test
+    versionLabel: v1
+    templateInputs:
+      stages:
+        - stage:
+            identifier: Stage_1
+            template:
+              templateInputs:
+                type: Approval
+                spec:
+                  execution:
+                    steps:
+                      - step:
+                          identifier: Step_1
+                          template:
+                            templateInputs:
+                              type: Http
+                              spec:
+                                url: <+input>
+                                requestBody: <+input>
+  tags: {}
+  projectIdentifier: Yogesh_Chaudhary_Test
+  orgIdentifier: default
