@@ -14,4 +14,4 @@ template:
       outputVariables: []
       method: GET
       requestBody: <+input>
-    timeout: 10s
+    timeout: <+input>
