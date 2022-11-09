@@ -8,10 +8,10 @@ template:
   tags: {}
   spec:
     type: Http
-    timeout: <+input>
     spec:
       url: <+input>
       headers: []
       outputVariables: []
       method: GET
       requestBody: <+input>
+    timeout: 10s
