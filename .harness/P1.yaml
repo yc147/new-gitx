@@ -19,6 +19,7 @@ pipeline:
                           template:
                             templateInputs:
                               type: Http
+                              timeout: <+input>
                               spec:
                                 url: <+input>
                                 requestBody: <+input>
