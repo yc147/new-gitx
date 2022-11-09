@@ -1,25 +1,24 @@
 template:
-  name: Second Stage
-  identifier: Second_Stage
-  versionLabel: v1
-  type: Stage
-  projectIdentifier: Yogesh_Chaudhary_Test
-  orgIdentifier: default
+  name: "Second Stage"
+  identifier: "Second_Stage"
+  versionLabel: "v1"
+  type: "Stage"
+  projectIdentifier: "Yogesh_Chaudhary_Test"
+  orgIdentifier: "default"
   tags: {}
   spec:
-    type: Approval
+    type: "Approval"
     spec:
       execution:
         steps:
-          - step:
-              name: Step 1
-              identifier: Step_1
-              template:
-                templateRef: Second_Step
-                versionLabel: v1
-                templateInputs:
-                  type: Http
-                  timeout: <+input>
-                  spec:
-                    url: <+input>
-                    requestBody: <+input>
+        - step:
+            name: "Step 1"
+            identifier: "Step_1"
+            template:
+              templateRef: "Second_Step"
+              versionLabel: "v1"
+              templateInputs:
+                type: "Http"
+                spec:
+                  url: "<+input>"
+                  requestBody: "<+input>"
