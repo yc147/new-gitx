@@ -22,4 +22,3 @@ template:
                 spec:
                   url: "<+input>"
                   requestBody: "<+input>"
-                timeout: "<+input>"
